@@ -1,11 +1,25 @@
 /* Add CSS soon */
-.container {
+.grid {
   display: flex;
+  border: solid blue;
+  width: 400px;
+  height: 400px;
 }
 
-.content {
-  display: flex;
+.row {
+  display: block;
   border: solid red;
   width: 16px;
   height: 16px;
+}
+
+.column {
+  display: block;
+  border: solid red;
+  width: 16px;
+  height: 16px;
+}
+
+body {
+  /**/
 }
