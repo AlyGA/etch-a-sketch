@@ -2,7 +2,9 @@
 
 // Initial values
 const grid = document.querySelector(".grid");
-let cellCount = 18;
+const rowContainer = document.querySelector(".row-container");
+const columnContainer = document.querySelector(".column-container");
+let cellCount = 25;
 
 // Loops through the cellCount's array and adds a new div each time to make a grid.
 for (let i = 0; i < cellCount; i++) {
@@ -10,7 +12,7 @@ for (let i = 0; i < cellCount; i++) {
   row.classList.add("row");
 
   // Add a column of divs to each row of divs. Make sure there's no overlap.
-  for (let j = 0; j < cellCount; j++) {
+  for (let j = 0; j < cellCount - 3; j++) {
     const column = document.createElement("div");
     column.classList.add("column");
     row.appendChild(column);

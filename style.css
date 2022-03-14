@@ -8,16 +8,18 @@
 
 .row {
   display: block;
-  border: solid red;
+  float: left;
   width: 16px;
   height: 16px;
 }
-
 .column {
-  display: block;
-  border: solid red;
+  border: black 1px solid;
   width: 16px;
   height: 16px;
+  margin: 0 auto;
+  margin-top: 0;
+  display: inline-block;
+  float: left;
 }
 
 body {
