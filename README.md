@@ -6,4 +6,4 @@ This project is a web browser that will allow the user to draw on it. It will be
 
 An example case is shown below:
 
-(>--- Add an image once the project is finished ---<)
+https://github.com/AlyGA/etch-a-sketch/blob/main/Project-UI.png
