@@ -9,13 +9,13 @@
 #restart {
   width: 60px;
   height: 60px;
+  background-color: #9dcdc0;
 }
 
 .grid {
   display: flex;
-  /* border: solid blue; */
-  width: 400px;
-  height: 400px;
+  width: 420px;
+  height: 420px;
 }
 
 .row {
@@ -25,6 +25,7 @@
   height: 16px;
 }
 .column {
+  background: white;
   border: black 1px solid;
   width: 16px;
   height: 16px;
@@ -36,7 +37,7 @@
 
 /* Effect of the column once the user hovers over a div*/
 .column-hover {
-  background: pink;
+  background: #9dcdc0;
   border: black 1px solid;
   width: 16px;
   height: 16px;
@@ -47,6 +48,8 @@
 }
 
 body {
+  color: #ac9969;
+  background-color: #d9f4c7;
   display: flex;
   flex-direction: column;
   justify-content: center;

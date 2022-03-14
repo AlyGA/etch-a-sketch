@@ -4,8 +4,8 @@ const restartButton = document.getElementById("restart");
 let row = null;
 let column = null;
 
-const playGame = function (cellCount) {
-  cellCount = Number(prompt("How many cells? Max is 100."));
+const playGame = function () {
+  const cellCount = 26;
   // Loops through the cellCount's array and adds a new div each time to make a grid.
   if (cellCount <= 100) {
     for (let i = 0; i < cellCount; i++) {
@@ -19,7 +19,7 @@ const playGame = function (cellCount) {
         row.appendChild(column);
 
         // Add function to leave color once a user hovers over the grid
-        column.addEventListener("mouseenter", function () {
+        column.addEventListener("click", function () {
           this.classList.add("column-hover");
           this.classList.remove("column");
         });
@@ -34,7 +34,7 @@ const playGame = function (cellCount) {
 
 playGame();
 
-// Restarting game when button is pressed
+// Restarting game when button is pressed by removing original rows and calling the playGame() function again
 restartButton.addEventListener("click", () => {
   document.querySelectorAll(".row").forEach((e) => e.parentNode.removeChild(e));
 
